@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'),
+        title: const Text('Home'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -16,15 +16,15 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment
               .spaceEvenly, // Distribuye los elementos de forma pareja
           children: [
-            Expanded(
+            const Expanded(
               child: ContentColumn(
                 title: 'Primer título',
                 description: 'Primer párrafo',
               ),
             ),
-            Expanded(
+            const Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Column(
                   children: [
                     Text('Otra línea'),
@@ -33,9 +33,9 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            Expanded(
+            const Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Column(
                   children: [
                     Text('Otra línea'),
@@ -50,7 +50,7 @@ class Home extends StatelessWidget {
                   Navigator.pushNamed(
                       context, '/new'); // Navega a la pantalla 'New'
                 },
-                child: Text('Ir a la pantalla home'),
+                child: const Text('Ir a la pantalla home'),
               ),
             ),
           ],

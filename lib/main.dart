@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:milton_app/modules/auth/login.dart';
 import 'package:milton_app/widgets/home.dart';
 import 'package:milton_app/widgets/splash_screen.dart';
 import 'package:milton_app/modules/home/screens/home.dart';
 import 'package:milton_app/modules/reservetions/screens/reservetions.dart';
 import 'package:milton_app/modules/top/screens/top.dart';
 import 'package:milton_app/modules/profile/screens/profile.dart';
+import 'package:milton_app/navigation/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashScreen(),
+        '/login': (context) => const Login(),
+        '/menu': (context) => const Navigation(),
         '/home': (context) => const Home(),
         '/new': (context) => const MyWidget(),
         '/reservation': (context) => const ReservationsWidget(),
