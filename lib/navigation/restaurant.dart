@@ -70,3 +70,6 @@ class Login extends StatelessWidget {
     );
   }
 }
+
+//Checar en que momenton se ocupa un spacer o spencer en un row
+//Saber como debugear y los breakpoints

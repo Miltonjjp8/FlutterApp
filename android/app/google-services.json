@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179783851533",
+    "project_id": "prueba-fd643",
+    "storage_bucket": "prueba-fd643.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179783851533:android:34d39989c5f950e6623f44",
+        "android_client_info": {
+          "package_name": "milton.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6unW1YE3k2vG30z3NbBNZP98JWtHeCC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

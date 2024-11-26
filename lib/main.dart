@@ -1,5 +1,9 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:milton_app/firebase_options.dart';
 import 'package:milton_app/modules/auth/login.dart';
+import 'package:milton_app/modules/tutorial/tutorial.dart';
+import 'package:milton_app/navigation/map_sample.dart';
 import 'package:milton_app/widgets/home.dart';
 import 'package:milton_app/widgets/splash_screen.dart';
 import 'package:milton_app/modules/home/screens/home.dart';
@@ -8,7 +12,11 @@ import 'package:milton_app/modules/top/screens/top.dart';
 import 'package:milton_app/modules/profile/screens/profile.dart';
 import 'package:milton_app/navigation/home.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -25,10 +33,12 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const Login(),
         '/menu': (context) => const Navigation(),
         '/home': (context) => const Home(),
-        '/new': (context) => const MyWidget(),
+        // '/new': (context) => const MyWidget(),
         '/reservation': (context) => const ReservationsWidget(),
         '/top': (context) => const TopWidget(),
         '/profile': (context) => const ProfileScreen(),
+        '/mapa': (context) => const MapSample(),
+        '/tutorial': (context) => const Tutorial(),
       },
     );
   }

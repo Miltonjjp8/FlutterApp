@@ -7,14 +7,14 @@ class TopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pantalla Top'),
+        title: const Text('Pantalla Top'),
       ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
             Navigator.pushNamed(context, '/profile');
           },
-          child: Text('Ir a la pantalla Perfil'),
+          child: const Text('Ir a la pantalla Perfil'),
         ),
       ),
     );

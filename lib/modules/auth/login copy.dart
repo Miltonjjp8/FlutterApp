@@ -49,8 +49,8 @@ class Login extends StatelessWidget {
             width: double.infinity,
             height: 400,
           ),
-          Row(
-            children: const [
+          const Row(
+            children: [
               Icon(
                 Icons.favorite,
                 color: Colors.red,

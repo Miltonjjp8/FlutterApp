@@ -7,14 +7,14 @@ class ReservationsWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pantalla reservaciones'),
+        title: const Text('Pantalla reservaciones'),
       ),
       body: Center(
         child: ElevatedButton(
           onPressed: () {
             Navigator.pushNamed(context, '/top');
           },
-          child: Text('Ir a la pantalla Top'),
+          child: const Text('Ir a la pantalla Top'),
         ),
       ),
     );
